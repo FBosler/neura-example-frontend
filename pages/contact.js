@@ -13,7 +13,7 @@ export default class Contact extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    gtag.set_user_id(this.state.message);
+    gtag.set_user_id({user_id: this.state.message});
 
     this.setState({ message: "" });
   };
